@@ -87,5 +87,5 @@ def index():
 # Run App
 # =========================
 if __name__ == "__main__":
-    # Local dev mode
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
+    
