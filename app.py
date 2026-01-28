@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, send_file
 from docx import Document
 import PyPDF2
-from google import genai
+import google.genai as genai
+
 
 
 import os
