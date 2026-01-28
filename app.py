@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, send_file
 from docx import Document
 import PyPDF2
-import google.generativeai as genai
+from google import genai
+
 
 import os
 
@@ -20,6 +21,9 @@ if not GEMINI_API_KEY:
     raise ValueError("❌ GEMINI_API_KEY not found in environment variables!")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
+
+
+
 
 # =========================
 # Functions
